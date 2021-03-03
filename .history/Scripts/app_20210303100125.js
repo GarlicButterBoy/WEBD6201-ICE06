@@ -39,10 +39,10 @@
           console.log(anchorArray.length);
           for (const anchor of anchorArray) 
             {
-                 anchor.addEventListener("mouseout", function()
-                 {
-                   console.log("Leaving a tag");
-                 });
+             anchor.addEventListener("mouseout", function()
+              {
+               console.log("Leaving a tag");
+              });
             }
 
           $("a").on("mouseover", function()

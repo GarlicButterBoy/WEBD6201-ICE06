@@ -41,8 +41,8 @@
             {
                  anchor.addEventListener("mouseout", function()
                  {
-                   console.log("Leaving a tag");
-                 });
+               console.log("Leaving a tag");
+              });
             }
 
           $("a").on("mouseover", function()
