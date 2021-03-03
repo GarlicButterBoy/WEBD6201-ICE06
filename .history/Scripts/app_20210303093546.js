@@ -31,13 +31,10 @@
             loadContent(activeLink);
             $(`#${activeLink}`).addClass("active"); //adds highlighted link
 
-           // history.replaceState({}, '', activeLink); //replaces url with new url in browser
+            history.replaceState({}, '', activeLink); //replaces url with new url in browser
 
-          });
-
-          $("a").on("mouseover", function()
-          {
-            $(this).css("cursor", "pointer");
+          //  location.href = String(location.href).replace(/#/, ""); //remove hashtag..?
+          URLSearchParams
           });
         });
     }

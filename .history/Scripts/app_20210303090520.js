@@ -22,23 +22,7 @@
           $(`#${pageName}`).addClass("active");
 
           //loop through each anchor tag in the unordered list and add an event listener
-          //or handler to allow for content injection
-          $("a").on("click", function()
-          {
-            $(`#${activeLink}`).removeClass("active"); //removes highlighted link
-
-            activeLink = $(this).attr("id");
-            loadContent(activeLink);
-            $(`#${activeLink}`).addClass("active"); //adds highlighted link
-
-           // history.replaceState({}, '', activeLink); //replaces url with new url in browser
-
-          });
-
-          $("a").on("mouseover", function()
-          {
-            $(this).css("cursor", "pointer");
-          });
+          //or handler to 
         });
     }
     /**
@@ -67,9 +51,8 @@
 
     function displayHome()
     {
-      activeLink = "home";
-      loadHeader(activeLink);
-      loadContent(activeLink);
+      loadHeader("home");
+      loadContent("home");
       loadFooter();
     }
 

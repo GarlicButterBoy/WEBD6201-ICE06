@@ -37,7 +37,12 @@
 
           $("a").on("mouseover", function()
           {
-            $(this).css("cursor", "pointer");
+            $(this).
+          });
+
+          $("a").on("mouseleave", function()
+          {
+
           });
         });
     }

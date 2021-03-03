@@ -30,14 +30,6 @@
             activeLink = $(this).attr("id");
             loadContent(activeLink);
             $(`#${activeLink}`).addClass("active"); //adds highlighted link
-
-           // history.replaceState({}, '', activeLink); //replaces url with new url in browser
-
-          });
-
-          $("a").on("mouseover", function()
-          {
-            $(this).css("cursor", "pointer");
           });
         });
     }

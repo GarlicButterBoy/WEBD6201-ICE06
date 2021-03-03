@@ -37,8 +37,10 @@
 
           $("a").on("mouseover", function()
           {
-            $(this).css("cursor", "pointer");
+
           });
+
+          
         });
     }
     /**
