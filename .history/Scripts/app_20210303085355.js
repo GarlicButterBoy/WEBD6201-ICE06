@@ -29,11 +29,10 @@
     function loadContent(pageName)
     {
       //inject content
-      $.get(`./Views/components/${pageName}`, function(data)
+      $.get(`./Views/components/home.html`, function(data)
       {
-       
-       
-       $("main").html(data);
+        console.log(data);
+       // $("main").html(data);
         
       });
     }

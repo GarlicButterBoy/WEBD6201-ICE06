@@ -9,7 +9,6 @@
 ((core) =>
 {
     /**
-     * Inject the nav bar into the header element and highlight active link based on pageName param
      * @param {string} pageName
      */
     function loadHeader(pageName)
@@ -29,11 +28,10 @@
     function loadContent(pageName)
     {
       //inject content
-      $.get(`./Views/components/${pageName}`, function(data)
+      $.get(`./Views/components/home.html`, function(data)
       {
-       
-       
-       $("main").html(data);
+        console.log(data);
+       // $("main").html(data);
         
       });
     }

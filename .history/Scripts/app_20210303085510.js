@@ -31,9 +31,8 @@
       //inject content
       $.get(`./Views/components/${pageName}`, function(data)
       {
-       
-       
-       $("main").html(data);
+        console.log(data);
+       // $("main").html(data);
         
       });
     }

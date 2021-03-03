@@ -8,50 +8,44 @@
 
 ((core) =>
 {
-    /**
-     * Inject the nav bar into the header element and highlight active link based on pageName param
-     * @param {string} pageName
-     */
-    function loadHeader(pageName)
+
+    function loadHeader()
     {
-      //inject Header
-      $.get("./Views/components/header.html", function(data)
-        {
-          $("header").html(data); //load the nav bar
-          //highlight active link
-          $(`#${pageName}`).addClass("active");
-        });
+
     }
-    /**
-     * @param   {string}
-     * @returns {void}
-     */
-    function loadContent(pageName)
+
+    function loadContent()
     {
-      //inject content
-      $.get(`./Views/components/${pageName}`, function(data)
-      {
-       
-       
-       $("main").html(data);
-        
-      });
+
     }
 
     function loadFooter()
     {
+
+    }
+
+    function displayHome()
+    {
+      //inject Header
+      $.get("./Views/components/header.html", function(data)
+      {
+        $("header").html(data);
+      });
+
+      //inject content
+      $.get("./Views/components/home.html", function(data)
+      {
+        console.log(data);
+       // $("main").html(data);
+        
+      });
+
       //inject footer
       $.get("./Views/components/footer.html", function(data)
       {
         $("footer").html(data);
       });
-    }
-
-    function displayHome()
-    {
-      loadHeader("home");
-      loadContent("home");
-      loadFooter();
+      
     }
 
     function displayAbout()
