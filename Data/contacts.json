@@ -1,0 +1,30 @@
+{
+    "contacts":
+    [
+        {
+            "FullName":"Tony Stark",
+            "ContactNumber":"4165555556",
+            "EmailAddress":"ironman@example.com"
+        },
+        {
+            "FullName":"Severus Snape",
+            "ContactNumber":"4165555557",
+            "EmailAddress":"snivelus@example.com"
+        },
+        {
+            "FullName":"Aragorn X",
+            "ContactNumber":"4165555558",
+            "EmailAddress":"king@example.com"
+        },
+        {
+            "FullName":"Luke Skywalker",
+            "ContactNumber":"4165555559",
+            "EmailAddress":"lsw@example.com"
+        },
+        {
+            "FullName":"Remus Lupin",
+            "ContactNumber":"4165555555",
+            "EmailAddress":"loupgaroup@example.com"
+        }
+    ]
+}
