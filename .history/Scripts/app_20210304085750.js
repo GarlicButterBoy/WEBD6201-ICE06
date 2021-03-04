@@ -38,14 +38,14 @@
 
           let anchorArray = document.getElementsByTagName("a");
           console.log(anchorArray.length);
-        /*  for (const anchor of anchorArray) 
+          for (const anchor of anchorArray) 
             {
                  anchor.addEventListener("mouseout", function()
                  {
                    console.log("Leaving a tag");
                  });
             }
-          */  
+
           $("a").on("mouseover", function()
           {
             $(this).css("cursor", "pointer");

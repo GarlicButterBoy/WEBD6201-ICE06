@@ -45,7 +45,7 @@
                    console.log("Leaving a tag");
                  });
             }
-          */  
+            
           $("a").on("mouseover", function()
           {
             $(this).css("cursor", "pointer");

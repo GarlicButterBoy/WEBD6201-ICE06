@@ -73,8 +73,7 @@
             }
         }
         /**
-         * Method returns the routing table as a string
-         * @returns {string}
+         * 
          */
         ToString() 
         {

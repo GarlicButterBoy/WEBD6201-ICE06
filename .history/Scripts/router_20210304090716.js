@@ -72,10 +72,8 @@
                 return false;
             }
         }
-        /**
-         * Method returns the routing table as a string
-         * @returns {string}
-         */
+
+        
         ToString() 
         {
             return this.m_routingTable.toString();

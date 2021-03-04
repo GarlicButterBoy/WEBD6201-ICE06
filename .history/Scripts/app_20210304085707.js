@@ -14,7 +14,7 @@
      */
     function loadHeader(pageName)
     {
-      
+      //console.log(location.pathname);
       //inject Header
       $.get("./Views/components/header.html", function(data)
         {
@@ -38,14 +38,14 @@
 
           let anchorArray = document.getElementsByTagName("a");
           console.log(anchorArray.length);
-        /*  for (const anchor of anchorArray) 
+          for (const anchor of anchorArray) 
             {
                  anchor.addEventListener("mouseout", function()
                  {
                    console.log("Leaving a tag");
                  });
             }
-          */  
+
           $("a").on("mouseover", function()
           {
             $(this).css("cursor", "pointer");
@@ -79,7 +79,6 @@
     function displayHome()
     {
       router.ActiveLink = "home";
-      //console.log(location.pathname);
       loadHeader(router.ActiveLink);
       loadContent(router.ActiveLink);
       loadFooter();

@@ -53,12 +53,6 @@
         {
             return this.m_routingTable.indexOf(route);
         }
-        /**
-         * Removes a route from the table if it is found
-         * returns true or false if it passes or fails
-         * @param {string} route 
-         * @returns {boolean}
-         */
         Remove(route) 
         {
             const index = this.Find(route);
@@ -72,10 +66,7 @@
                 return false;
             }
         }
-        /**
-         * Method returns the routing table as a string
-         * @returns {string}
-         */
+
         ToString() 
         {
             return this.m_routingTable.toString();
